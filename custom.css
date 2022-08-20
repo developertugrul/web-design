@@ -1,0 +1,133 @@
+.page-wrapper.compact-wrapper .page-body-wrapper header.main-nav .sidebar-user {
+    padding: 10px !important;
+}
+
+.page-main-header .main-header-right .nav-right .chat-dropdown {
+    right: 3px !important;
+    width: fit-content;
+}
+
+.fa-globe.font18 {
+    display: inline-block;
+    margin-bottom: -4px;
+}
+
+img.bilen-logo {
+    max-width: 85% !important;
+    height: auto;
+}
+
+.font18 {
+    font-size: 17px;
+}
+
+.world-div {
+    padding-top: 3px;
+}
+
+i#sidebar-toggle {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #24695c;
+}
+
+.font13 {
+    font-size: 13px;
+}
+
+.custom-scrollbar > li > a > span {
+    font-size: .875rem;
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.svg-sidebar {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.language-svg {
+    width: 1.3rem;
+}
+
+.flexit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.waiter-buttons {
+    display: block;
+    flex: 0 0 15%;
+    width: 15%;
+    margin: 5px;
+}
+
+div.waiter-buttons > a.btn.py-2 {
+    min-height: 10rem;
+    font-size: 12px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    padding-top: 1.5rem !important;
+}
+.modal-title{
+    width: 100%;
+}
+
+@media only screen and (max-width: 1280px) {
+    .waiter-buttons {
+        flex: 0 0 15%;
+        width: 15%;
+    }
+
+    div.waiter-buttons > a.btn > span.h5 {
+        font-size: 1.2rem !important;
+        font-weight: 600;
+    }
+
+    div.waiter-buttons > a.btn > span.font13 {
+        font-size: 1rem !important;
+    }
+}
+
+
+@media only screen and (max-width: 820px) {
+    .waiter-buttons {
+        flex: 0 0 23%;
+        width: 23%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .waiter-buttons {
+        flex: 0 0 22%;
+        width: 22%;
+        margin: 5px 3px;
+    }
+
+    .waiter-buttons > a.btn {
+        padding: 0.3rem !important;
+        min-height: 6rem !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    div.waiter-buttons > a.btn > span.h5 {
+        font-size: 1rem !important;
+        font-weight: 600;
+    }
+
+    div.waiter-buttons > a.btn.py-2 {
+        padding: 0.3rem !important;
+        min-height: 6rem;
+    }
+    div.waiter-buttons > a.btn > span.font13 {
+        font-size: 0.8rem !important;
+    }
+}
