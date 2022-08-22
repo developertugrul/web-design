@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="cafe_tugrul" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="cafe_tugrul">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/cafe.tugrulyildirim.com" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
