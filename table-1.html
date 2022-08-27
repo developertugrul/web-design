@@ -50,16 +50,20 @@
 </head>
 <body>
 <!-- Loader starts-->
+<div class="loader-wrapper">
+    <div class="theme-loader">
+        <div class="loader-p"></div>
+    </div>
+</div>
 <!-- Loader ends-->
 <!-- page-wrapper Start       -->
 <div class="page-wrapper compact-wrapper" id="pageWrapper">
     <!-- Page Header Start-->
-    <!-- Page Header Start-->
     <div class="page-main-header">
         <div class="main-header-right row m-0">
-            <div class="main-header-left py-0">
+            <div class="main-header-left">
                 <div class="logo-wrapper"><a href="/" title="dashboard">
-                    <img class="img-fluid bilen-logo" src="/assets/logo/bilenium-logo.webp" style="width: 4.5rem !important;" alt=""></a>
+                    <img class="img-fluid bilen-logo" src="/assets/logo/bilenium-logo.webp" alt=""></a>
                 </div>
                 <div class="dark-logo-wrapper">
                     <a href="/" title="dashboard"><img class="img-fluid bilen-logo" src="/assets/logo/bilenium-logo.webp" alt="">
@@ -68,12 +72,12 @@
                 <div class="toggle-sidebar"><i class="icon-align-left status_toggle middle" id="sidebar-toggle"></i> </div>
             </div>
             <div class="left-menu-header col">
-                <ul class="top-ul">
+                <ul>
                     <li>
-                        <button class="btn btn-last-order btn-sm p-3 text-uppercase" type="button" data-bs-toggle="modal" data-original-title="test" data-bs-target="#lastOrdersModal" data-bs-original-title="" title="">Last Orders</button>
+                        <button class="btn btn-dark btn-sm" type="button" data-bs-toggle="modal" data-original-title="test" data-bs-target="#lastOrdersModal" data-bs-original-title="" title="">Last Orders</button>
                     </li>
                     <li>
-                        <button class="btn btn-combine-table btn-sm p-3 text-uppercase" type="button" data-bs-toggle="modal" data-original-title="test" data-bs-target="#combineTableModal" data-bs-original-title="" title="">Combine Tables</button>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="modal" data-original-title="test" data-bs-target="#combineTableModal" data-bs-original-title="" title="">Combine Tables</button>
                     </li>
                 </ul>
             </div>
@@ -97,13 +101,102 @@
                     </li>
                     <li class="onhover-dropdown p-0">
                         <button class="btn btn-transparent pl-0 pr-0 p-0" type="button"><a href="login_two.html"><img src="assets/svg/logout.svg" width="25"
-                                                                                                          alt=""></a></button>
+                                                                                                                      alt=""></a></button>
                     </li>
                 </ul>
             </div>
             <div class="d-lg-none mobile-toggle pull-right w-auto"><i data-feather="more-horizontal"></i></div>
         </div>
     </div>
+    <!-- Page Header Ends                              -->
+    <!-- Page Body Start-->
+    <div class="page-body-wrapper sidebar-icon">
+        <!-- Page Sidebar Start-->
+        <header class="main-nav">
+            <div class="sidebar-user text-center">
+                <a href="#">
+                    <h6 class="mt-3 f-14 f-w-600">Emay Walter</h6>
+                </a>
+                <p class="mb-0 font-roboto">Waiter</p>
+            </div>
+            <nav>
+                <div class="main-navbar">
+                    <div class="left-arrow disabled" id="left-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg></div>
+                    <div id="mainnav">
+                        <ul class="nav-menu custom-scrollbar">
+                            <li class="back-btn">
+                                <div class="mobile-back text-end"><span>Back</span><i class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>
+                            </li>
+                            <li>
+                                <a class="nav-link menu-title link-nav" href="/kitchen.html">
+                                    <img src="assets/svg/kitchen.svg" class="svg-sidebar" alt=""> <span>Kitchen</span>
+                                    <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
+                            </li>
+                            <li>
+                                <a class="nav-link menu-title link-nav" href="/waiter.html">
+                                    <img src="assets/svg/waiter2.svg" class="svg-sidebar" alt=""> <span>Waiter</span>
+                                    <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
+                            </li>
+                            <li class="sidebar-main-title">
+                                <div>
+                                    <h6>Settings</h6>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="nav-link menu-title link-nav" href="/">
+                                    <img src="assets/svg/dashboard.svg" class="svg-sidebar" alt="">
+                                    <span>Dashboard</span>
+                                    <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
+                            </li>
+                            <li>
+                                <a class="nav-link menu-title link-nav" href="/users.html">
+                                    <img src="assets/svg/report.svg" class="svg-sidebar" alt=""><span>Reports</span>
+                                    <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
+                            </li>
+                            <li>
+                                <a class="nav-link menu-title link-nav" href="/users.html">
+                                    <img src="assets/svg/users.svg" class="svg-sidebar" alt=""><span>Users</span>
+                                    <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
+                            </li>
+                            <li class="dropdown">
+                                <a class="nav-link menu-title" href="javascript:void(0)">
+                                    <img src="assets/svg/products.svg" class="svg-sidebar" alt=""><span>Products</span>
+                                    <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
+                                <ul class="nav-submenu menu-content" style="display: none;">
+                                    <li><a class="active" href="/product-list.html">Product List</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="nav-link menu-title" href="javascript:void(0)">
+                                    <img src="assets/svg/category.svg" class="svg-sidebar" alt=""><span>Categories</span>
+                                    <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
+                                <ul class="nav-submenu menu-content" style="display: none;">
+                                    <li><a class="active" href="/category-list.html">Category List</a></li>
+                                    <li><a class="active" href="/add-category.html">Add New Category</a></li>
+                                    <li><a class="active" href="/menu-list.html">Menu List</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="nav-link menu-title link-nav" href="/tables.html">
+                                    <img src="assets/svg/table.svg" class="svg-sidebar" alt=""><span>Tables</span>
+                                    <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
+                            </li>
+                            <li>
+                                <a class="nav-link menu-title link-nav" href="/categories.html">
+                                    <img src="assets/svg/kitchen2.svg" class="svg-sidebar" alt=""><span>Kitchen</span>
+                                    <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
+                            </li>
+                            <li>
+                                <a class="nav-link menu-title link-nav" href="/printers.html">
+                                    <img src="assets/svg/printer.svg" class="svg-sidebar" alt=""><span>Printers</span>
+                                    <div class="according-menu"><i class="fa fa-angle-right"></i></div></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-arrow" id="right-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+                </div>
+            </nav>
+        </header>
     <!-- Page Header Ends-->
     <!-- Page Body Start-->
     <div class="page-body-wrapper">
