@@ -1510,7 +1510,7 @@ var options1 = {
         curve: 'smooth'
     },
     series: [{
-        name: 'series1',
+        name: 'Elma',
         data: [31, 40, 28, 51, 42, 109, 100]
     }, {
         name: 'series2',
@@ -1542,7 +1542,7 @@ var options2 = {
         height: 350,
         type: 'bar',
         toolbar:{
-          show: false
+            show: false
         }
     },
     plotOptions: {
@@ -1557,7 +1557,32 @@ var options2 = {
         data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
     }],
     xaxis: {
-        categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands', 'Italy', 'France', 'Japan', 'United States', 'China', 'Germany'],
+        categories: ['Food1', 'Food2', 'Food3', 'Food4', 'Food5', 'Food6', 'Food7', 'Food8', 'Food9', 'Food10'],
+    },
+    colors:[vihoAdminConfig.primary]
+}
+// basic bar chart
+var options2x = {
+    chart: {
+        height: 350,
+        type: 'bar',
+        toolbar:{
+            show: true
+        }
+    },
+    plotOptions: {
+        bar: {
+            horizontal: true,
+        }
+    },
+    dataLabels: {
+        enabled: true
+    },
+    series: [{
+        data: [350, 410, 422, 487, 510, 555, 645, 860, 1112, 1545]
+    }],
+    xaxis: {
+        categories: ['Drink1', 'Drink2', 'Drink3', 'Drink4', 'Drink5', 'Drink6', 'Drink7', 'Drink8', 'Drink9', 'Drink10'],
     },
     colors:[vihoAdminConfig.primary]
 }
@@ -1566,8 +1591,13 @@ var chart2 = new ApexCharts(
     document.querySelector("#basic-bar"),
     options2
 );
+var chart3x = new ApexCharts(
+    document.querySelector("#basic-bar2"),
+    options2x
+);
 
 chart2.render();
+chart3x.render();
 
 // column chart
 var options3 = {
@@ -2319,7 +2349,7 @@ var options10 = {
         }
     },
     series: [{
-        name: 'Series 1',
+        name: 'Elma 1',
         data: [20, 100, 40, 30, 50, 80, 33],
     }],
     labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],

@@ -9,3 +9,7 @@ $("#sidebar-toggle").click(
         }
     }
 );
+
+function changePrice(){
+    alert("chancing price");
+}

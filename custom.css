@@ -17,36 +17,45 @@ img.bilen-logo {
     height: auto;
     width: 4.5rem;
 }
+
 .common-payment-button:last-child {
     padding-right: 0 !important;
 }
+
 .common-payment-button:first-child {
     padding-left: 0 !important;
     margin-left: 3px;
 }
-.color-bilenium{
+
+.color-bilenium {
     color: #0E5B90 !important;
 }
-.dashboard-default-sec .card .card-header.pls, .dashboard-default-sec .card .card-body, .dashboard-default-sec .card .card-footer{
+
+.dashboard-default-sec .card .card-header.pls, .dashboard-default-sec .card .card-body, .dashboard-default-sec .card .card-footer {
     padding: 0 9px 20px !important;
 }
-.bg-d9{
+
+.bg-d9 {
     background-color: #69788c !important;
 }
-.bg-556{
+
+.bg-556 {
     background-color: #556273 !important;
 }
-.orderItemCancel > .btn.btn-danger{
+
+.orderItemCancel > .btn.btn-danger {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 45px;
 }
-td.bg-556{
+
+td.bg-556 {
     font-size: 0.8rem;
     padding-top: 0px;
     padding-bottom: 0px;
 }
+
 .font18 {
     font-size: 17px;
 }
@@ -104,16 +113,17 @@ div.waiter-buttons > a.btn.py-2 {
     flex-wrap: wrap;
     padding-top: 1.5rem !important;
 }
-.modal-title{
+
+.modal-title {
     width: 100%;
 }
 
-.borderit{
+.borderit {
     border: 1px solid #ebebeb;
     padding: .5rem .2rem .2rem .5rem;
 }
 
-.quantity-input{
+.quantity-input {
     display: flex;
     flex-wrap: wrap;
     position: absolute;
@@ -128,6 +138,7 @@ div.waiter-buttons > a.btn.py-2 {
     border: 1px solid lightgray;
     padding: 0.4rem 0.1rem 0.1rem 0.5rem;
 }
+
 /* set width of logo as the minimum of 100px & 100vw */
 .logo-img {
     width: min(50vw, 50px);
@@ -206,7 +217,7 @@ tfoot tr td {
     width: 100%;
 }
 
-.common-payment-button{
+.common-payment-button {
     display: flex;
     align-items: center;
     text-align: center;
@@ -220,145 +231,178 @@ tfoot tr td {
     font-weight: bold;
     min-height: 3.2rem;
 }
+
 a.payment-button {
     background: black;
     border: 1px solid black;
     color: white;
 }
-.cancel-order{
+
+.cancel-order {
     background: #d92525;
     border: 1px solid #d92525;
     color: white;
 }
-.back-button{
+
+.back-button {
     background: #f2b705;
     border: 1px solid #f2b705;
     color: white;
 }
-.get-bill{
+
+.get-bill {
     background: #00879f;
     border: 1px solid #00879f;
     color: white;
 }
-.call-kitchen{
+
+.call-kitchen {
     background: #ef7100;
     border: 1px solid #ef7100;
     color: white;
 }
-.close-table-button{
+
+.close-table-button {
     background: #d92525;
     border: 1px solid #d92525;
     color: white;
 }
 
-.categoryBtn{
+.categoryBtn {
     padding-right: .2rem !important;
     padding-left: .2rem !important;
 }
-.page-main-header .main-header-right .main-header-left{
+
+.page-main-header .main-header-right .main-header-left {
     padding: 0 40px !important;
 }
-.page-main-header .main-header-right .main-header-left{
+
+.page-main-header .main-header-right .main-header-left {
     width: 205px !important;
 }
 
-.btn-gray1{
+.btn-gray1 {
     background-color: #556273 !important;
     border-color: #556273 !important;
     color: whitesmoke;
 }
-.btn-gray1:hover{
+
+.btn-gray1:hover {
     color: white;
 }
-.btn-gray2{
+
+.btn-gray2 {
     background-color: #69788c !important;
     border-color: #69788c !important;
-color: whitesmoke;
+    color: whitesmoke;
 }
-.btn-gray2:hover{
+
+.btn-gray2:hover {
     color: white;
 }
-.btn-gray3{
+
+.btn-gray3 {
     background-color: #8a99a6 !important;
     border-color: #8a99a6 !important;
     color: whitesmoke;
 }
-.btn-gray3:hover{
+
+.btn-gray3:hover {
     color: white;
 }
-.btn-product{
+
+.btn-product {
     background-color: #8a8c87 !important;
     border-color: #8a8c87 !important;
     color: #fefefe;
 }
-.btn-product:hover{
+
+.btn-product:hover {
     color: #fefefe;
 }
 
-.btn-last-order{
+.btn-last-order {
     background-color: #556273;
     border-color: #556273;
     color: white;
 }
 
-.btn-combine-table{
+.btn-combine-table {
     background-color: #69788C;
     border-color: #69788C;
     color: white;
 }
-.top-ul{
+
+.top-ul {
     margin-left: 6rem;
 }
-@media only screen and (max-width: 1280px) {
-    .waiter-buttons {
-        flex: 0 0 15%;
-        width: 15%;
-    }
 
-    div.waiter-buttons > a.btn > span.h5 {
-        font-size: 2.4rem !important;
-        font-weight: 600;
-    }
+.btn-table-full {
+    background-color: #135C8E;
+    border-color: #135C8E;
+    color: white;
+}
 
-    div.waiter-buttons > a.btn > span.font13 {
-        font-size: 1rem !important;
-    }
+.btn-table-empty {
+    background-color: #fefefe;
+    border-color: #135C8E;
+    color: #135C8E;
+}
+
+option {
+    font-size: 1.2rem !important;
+}
+
+#last-orders-modal > tbody > tr > td {
+    font-size: .875rem !important;
+}
+
+.table-striped-custom > tbody > tr:nth-child(even) {
+    background-color: #69788C !important;
+}
+
+table > tbody > tr > td {
+    text-transform: uppercase;
+}
+
+table > thead > tr > th {
+    text-transform: uppercase;
+}
+
+.table-striped-custom > tbody > tr:nth-child(even) > td {
+    color: #fefefe !important;
+}
+
+.table-striped-custom > tbody > tr:nth-child(odd) {
+    background-color: #d9d9d9 !important;
+}
+
+table.dty > tbody > tr > td {
+    color: #000 !important;
+}
+
+table.dty > tbody > tr > th {
+    color: #000 !important;
+}
+
+.bold {
+    font-weight: bold !important;
+}
+
+.table-striped-custom > tbody > tr:nth-child(odd) > td {
+    color: #556273 !important;
 }
 
 
-@media only screen and (max-width: 820px) {
-    .waiter-buttons {
-        flex: 0 0 23%;
-        width: 23%;
-    }
+.page-main-header .main-header-right .left-menu-header {
+    padding: 12px 40px !important;
 }
 
-@media only screen and (max-width: 480px) {
-    .waiter-buttons {
-        flex: 0 0 22%;
-        width: 22%;
-        margin: 5px 3px;
-    }
 
-    .waiter-buttons > a.btn {
-        padding: 0.3rem !important;
-        min-height: 6rem !important;
-        display: flex !important;
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-        align-items: center !important;
-    }
-
-    div.waiter-buttons > a.btn > span.h5 {
-        font-size: 1rem !important;
-        font-weight: 600;
-    }
-
-    div.waiter-buttons > a.btn.py-2 {
-        padding: 0.3rem !important;
-        min-height: 6rem;
-    }
-    div.waiter-buttons > a.btn > span.font13 {
-        font-size: 0.8rem !important;
-    }
+.add-new-category{
+    background: #f2b705;
+    border: 1px solid #f2b705;
+    color: white;
+    width: unset !important;
+    float: right;
 }

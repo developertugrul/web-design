@@ -45,6 +45,7 @@
 
     <!-- Benim yazdığım harici css dosyası -->
     <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="responsive.css">
 
 </head>
 <body>
@@ -69,10 +70,10 @@
             <div class="left-menu-header col">
                 <ul class="top-ul">
                     <li>
-                        <button class="btn btn-last-order btn-sm" type="button" data-bs-toggle="modal" data-original-title="test" data-bs-target="#lastOrdersModal" data-bs-original-title="" title="">Last Orders</button>
+                        <button class="btn btn-last-order btn-sm p-3 text-uppercase" type="button" data-bs-toggle="modal" data-original-title="test" data-bs-target="#lastOrdersModal" data-bs-original-title="" title="">Last Orders</button>
                     </li>
                     <li>
-                        <button class="btn btn-combine-table btn-sm" type="button" data-bs-toggle="modal" data-original-title="test" data-bs-target="#combineTableModal" data-bs-original-title="" title="">Combine Tables</button>
+                        <button class="btn btn-combine-table btn-sm p-3 text-uppercase" type="button" data-bs-toggle="modal" data-original-title="test" data-bs-target="#combineTableModal" data-bs-original-title="" title="">Combine Tables</button>
                     </li>
                 </ul>
             </div>
@@ -909,8 +910,8 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button class="btn btn-outline-danger" type="button" data-bs-dismiss="modal">Cancel</button>
-                <button class="btn btn-outline-success" type="button">Combine</button>
+                <button class="btn btn-secondary text-uppercase" type="button" data-bs-dismiss="modal">Cancel</button>
+                <button class="btn btn-success text-uppercase" type="button">Combine</button>
             </div>
         </div>
     </div>
@@ -926,7 +927,7 @@
             </div>
             <div class="modal-body">
                 <div class="table-responsive">
-                    <table class="table table-bordered table-hover">
+                    <table class="table table-bordered table-hover" id="last-orders-modal">
                         <thead>
                         <tr>
                             <th>#</th>
@@ -943,7 +944,7 @@
                             <td>Table-1</td>
                             <td>12:00</td>
                             <td>1</td>
-                            <td><span class="badge badge-warning">Waiting</span></td>
+                            <td><button class="btn btn-warning btn-sm text-uppercase w-100">Waiting</button></td>
                             <td>
                                 <button class="btn btn-secondary btn-sm" type="button" data-bs-toggle="modal" data-original-title="test" data-bs-target="#lastOrderDetail1">Details &#8594;</button>
 
@@ -980,7 +981,7 @@
                             <td>Table-1</td>
                             <td>12:15</td>
                             <td>2</td>
-                            <td><span class="badge badge-success">Completed</span></td>
+                            <td><button class="btn btn-success btn-sm text-uppercase w-100">Completed</button></td>
                             <td>
                                 <button class="btn btn-info btn-sm" type="button" data-bs-toggle="modal" data-original-title="test" data-bs-target="#lastOrderDetail2">Details &#8594;</button>
                                 <div class="modal fade" id="lastOrderDetail2" tabindex="-1" role="dialog" aria-labelledby="lastOrderDetail2Label" aria-hidden="true">
