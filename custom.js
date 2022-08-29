@@ -13,3 +13,11 @@ $("#sidebar-toggle").click(
 function changePrice(){
     alert("chancing price");
 }
+
+const showCategoryButtons =  (categoryName) => {
+    $("#"+categoryName).toggle();
+}
+
+const showCategoryButtonsMobile =  (categoryName) => {
+    $("#"+categoryName).toggle();
+}

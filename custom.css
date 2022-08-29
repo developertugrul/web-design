@@ -151,9 +151,6 @@ div.categoryOrderList {
     overflow: hidden;
 }
 
-div.categoryOrderList:hover {
-    overflow-y: scroll;
-}
 
 div.categoryOrderList::-webkit-scrollbar {
     width: 10px;
