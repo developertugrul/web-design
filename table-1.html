@@ -256,109 +256,212 @@
                                         <div class="row">
                                             <div class="col-xxl-6 col-lg-6 col-md-6 col-sm-12 col-12" id="mobileEnable">
                                                 <div id="mobileCategoryList" class="row">
-                                                    <button class="btn w-100 btn-lg btn-gray1 mb-1 py-3 categoryBtn"
+                                                    <button class="btn btn-lg btn-gray1 mb-1 py-3 categoryBtn mobileTopCategoryBtn"
                                                             data-categoryid="food"
                                                             onclick="showCategoryButtonsMobile('foodMobile')"
                                                             type="button">Food
                                                     </button>
-                                                    <div id="foodMobile" style="display: none">
-                                                        <button class="btn w-100 btn-lg btn-gray3 mb-1 py-3 categoryBtn"
-                                                                type="button">Breakfast
-                                                        </button>
-                                                        <button class="btn w-100 btn-lg btn-gray3 mb-1 py-3 categoryBtn"
-                                                                type="button">Lunch
-                                                        </button>
-                                                        <button class="btn w-100 btn-lg btn-gray3 mb-1 py-3 categoryBtn"
-                                                                type="button">Dinner
-                                                        </button>
-                                                    </div>
-                                                    <button class="btn w-100 btn-lg btn-gray1 mb-1 py-3 categoryBtn"
-                                                            data-categoryid="drinks"
-                                                            onclick="showCategoryButtonsMobile('drinkMobile')"
-                                                            type="button">Drinks
+                                                    <button class="btn btn-lg btn-gray1 mb-1 py-3 categoryBtn mobileTopCategoryBtn"
+                                                            data-categoryid="food"
+                                                            onclick="showCategoryButtonsMobile('desertMobile')"
+                                                            type="button">Desert
                                                     </button>
-                                                    <div id="drinkMobile" style="display: none">
-                                                        <button class="btn w-100 btn-lg btn-gray3 mb-1 py-3 categoryBtn"
-                                                                type="button">Soft Drinks
-                                                        </button>
-                                                        <button class="btn w-100 btn-lg btn-gray3 mb-1 py-3 categoryBtn"
-                                                                type="button">Juices
-                                                        </button>
-                                                        <button class="btn w-100 btn-lg btn-gray3 mb-1 py-3 categoryBtn"
-                                                                type="button">Beer
-                                                        </button>
-                                                        <button class="btn w-100 btn-lg btn-gray3 mb-1 py-3 categoryBtn"
-                                                                type="button">Wine
-                                                        </button>
+                                                    <button class="btn btn-lg btn-gray1 mb-1 py-3 categoryBtn mobileTopCategoryBtn"
+                                                            data-categoryid="food"
+                                                            onclick="showCategoryButtonsMobile('drinkMobile')"
+                                                            type="button">Drink
+                                                    </button>
+                                                    <button class="btn btn-lg btn-gray1 mb-1 py-3 categoryBtn mobileTopCategoryBtn"
+                                                            data-categoryid="food"
+                                                            onclick="showCategoryButtonsMobile('alcoholMobile')"
+                                                            type="button">Alcohol
+                                                    </button>
+                                                    <div id="foodMobile" class="col-md-12" style="display: none">
+                                                        <div class="row">
+                                                            <button class="btn  btn-lg btn-gray3 mb-1 py-3 categoryBtn mobileCategoryBtn"
+                                                                    type="button" onclick="toggleProductList()">
+                                                                Breakfast
+                                                            </button>
+                                                            <button class="btn btn-lg btn-gray3 mb-1 py-3 categoryBtn mobileCategoryBtn"
+                                                                    type="button" onclick="toggleProductList()">Lunch
+                                                            </button>
+                                                            <button class="btn btn-lg btn-gray3 mb-1 py-3 categoryBtn mobileCategoryBtn"
+                                                                    type="button" onclick="toggleProductList()">Dinner
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div id="drinkMobile" class="col-md-12" style="display: none">
+                                                        <div class="row">
+                                                            <button class="btn  btn-lg btn-gray3 mb-1 py-3 categoryBtn mobileCategoryBtn"
+                                                                    type="button" onclick="toggleProductList()">Coffee
+                                                            </button>
+                                                            <button class="btn btn-lg btn-gray3 mb-1 py-3 categoryBtn mobileCategoryBtn"
+                                                                    type="button" onclick="toggleProductList()">Coke
+                                                            </button>
+                                                            <button class="btn btn-lg btn-gray3 mb-1 py-3 categoryBtn mobileCategoryBtn"
+                                                                    type="button" onclick="toggleProductList()">Beer
+                                                            </button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="row" id="mobileProductList">
-                                                    <div class="col-6">
-                                                        <button class="btn btn-lg h-100 w-95 btn-product mx-2"
-                                                                style="min-height:5rem;" type="button"
-                                                                data-bs-toggle="modal"
-                                                                data-original-title="Product Name"
-                                                                data-bs-target="#productModal1"
-                                                                data-bs-original-title="" title="">
-                                                            Vegetarian Breakfast (V)
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <button class="btn btn-lg h-100 w-95 btn-product mx-2"
-                                                                style="min-height:5rem;" type="button"
-                                                                data-bs-toggle="modal"
-                                                                data-original-title="Product Name"
-                                                                data-bs-target="#productModal1"
-                                                                data-bs-original-title="" title="">
-                                                            Vegetarian Breakfast (V)
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <button class="btn btn-lg h-100 w-95 btn-product mx-2"
-                                                                style="min-height:5rem;" type="button"
-                                                                data-bs-toggle="modal"
-                                                                data-original-title="Product Name"
-                                                                data-bs-target="#productModal1"
-                                                                data-bs-original-title="" title="">
-                                                            Vegetarian Breakfast (V)
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <button class="btn btn-lg h-100 w-95 btn-product mx-2"
-                                                                style="min-height:5rem;" type="button"
-                                                                data-bs-toggle="modal"
-                                                                data-original-title="Product Name"
-                                                                data-bs-target="#productModal1"
-                                                                data-bs-original-title="" title="">
-                                                            Vegetarian Breakfast (V)
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <button class="btn btn-lg h-100 w-95 btn-product mx-2"
-                                                                style="min-height:5rem;" type="button"
-                                                                data-bs-toggle="modal"
-                                                                data-original-title="Product Name"
-                                                                data-bs-target="#productModal1"
-                                                                data-bs-original-title="" title="">
-                                                            Vegetarian Breakfast (V)
-                                                        </button>
-                                                    </div>
+                                                    <button class="btn btn-product btn-product-wide mx-2"
+                                                            type="button"
+                                                            data-bs-toggle="modal"
+                                                            data-original-title="Product Name"
+                                                            data-bs-target="#productModal1"
+                                                            data-bs-original-title="" title="">
+                                                        Vegetarian Breakfast (V)
+                                                    </button>
+                                                    <button class="btn btn-product btn-product-wide mx-2"
+                                                            type="button"
+                                                            data-bs-toggle="modal"
+                                                            data-original-title="Product Name"
+                                                            data-bs-target="#productModal1"
+                                                            data-bs-original-title="" title="">
+                                                        Vegetarian Breakfast (V)
+                                                    </button>
+                                                    <button class="btn btn-product btn-product-wide mx-2"
+                                                            type="button"
+                                                            data-bs-toggle="modal"
+                                                            data-original-title="Product Name"
+                                                            data-bs-target="#productModal1"
+                                                            data-bs-original-title="" title="">
+                                                        Vegetarian Breakfast (V)
+                                                    </button>
+                                                    <button class="btn btn-product btn-product-wide mx-2"
+                                                            type="button"
+                                                            data-bs-toggle="modal"
+                                                            data-original-title="Product Name"
+                                                            data-bs-target="#productModal1"
+                                                            data-bs-original-title="" title="">
+                                                        Vegetarian Breakfast (V)
+                                                    </button>
+
                                                 </div>
                                             </div>
-                                            <div class="col-xxl-6 col-lg-6">
+                                            <div class="col-xxl-6 col-lg-6 pt-4">
                                                 <div class="card pt-0">
                                                     <div class="card-header pls">
                                                         <div class="row">
-                                                            <div class="col-md-3 p-0 text-center">
+                                                            <div class="col-md-3 col-4 p-0 text-center">
                                                                 <a class="common-payment-button close-table-button">Close
                                                                     Table</a>
                                                             </div>
-                                                            <div class="col-md-6">
-                                                                <h5 class="mb-2 text-center text-uppercase text-dark pt-3">
+                                                            <div class="col-md-6 col-4">
+                                                                <h5 class="mb-2 text-center text-uppercase text-dark my-pt-3">
                                                                     Table 1</h5>
                                                             </div>
-                                                            <div class="col-md-3 p-0 text-center">
-                                                                <a class="common-payment-button payment-button btn-primary">Payment</a>
+                                                            <div class="col-md-3 col-4 p-0 text-center">
+                                                                <button class="common-payment-button payment-button btn-primary"
+                                                                        type="button" data-bs-toggle="modal"
+                                                                        data-original-title="test"
+                                                                        data-bs-target="#paymentModal"
+                                                                        data-bs-original-title=""
+                                                                        title="">Payment
+                                                                </button>
+
+
+                                                                <div class="modal fade bd-example-modal-lg"
+                                                                     tabindex="-1" id="paymentModal" role="dialog"
+                                                                     aria-labelledby="paymentModalLabel"
+                                                                     aria-hidden="true">
+                                                                    <div class="modal-dialog modal-lg">
+                                                                        <div class="modal-content">
+                                                                            <div class="modal-header text-start">
+                                                                                <h4 class="modal-title"
+                                                                                    id="paymentModalLabel">Fiş Tutarı: £65</h4>
+                                                                                <button class="btn-close" type="button"
+                                                                                        data-bs-dismiss="modal"
+                                                                                        aria-label="Close"></button>
+                                                                            </div>
+                                                                            <div class="modal-body text-start">
+                                                                                <form action="">
+                                                                                    <div class="row">
+                                                                                        <div class="col-md-3 col-4 text-start">
+                                                                                            <h6>Bekleyen ödeme:</h6>
+                                                                                        </div>
+                                                                                        <div class="col-md-3 col-4 text-start">
+                                                                                            <h6>£41.00</h6>
+                                                                                        </div>
+                                                                                        <div class="col-md-3 col-4 text-start">
+                                                                                            <h6>Ödenmiş tutar:</h6>
+                                                                                        </div>
+                                                                                        <div class="col-md-3 col-4 text-start">
+                                                                                            <h6>£24.00</h6>
+                                                                                        </div>
+                                                                                        <div class="col-md-3 col-4 text-start">
+                                                                                            <h6>Hesaplanan tutar:</h6>
+                                                                                        </div>
+                                                                                        <div class="col-md-9 col-8 text-start">
+                                                                                            <h6>£0.00</h6>
+                                                                                        </div>
+                                                                                        <div class="col-md-12">
+                                                                                            <input type="number"
+                                                                                                   placeholder="£0.00"
+                                                                                                   min="0"
+                                                                                                   class="form-control"
+                                                                                                   value="23.50">
+                                                                                        </div>
+                                                                                        <div class="col-md-12">
+                                                                                            <div class="row">
+                                                                                                <div class="col-md-3">
+                                                                                                    <input type="radio"
+                                                                                                           name="payment_type"
+                                                                                                           id="type_1">
+                                                                                                    <label for="type_1">Card</label>
+                                                                                                </div>
+                                                                                                <div class="col-md-3">
+                                                                                                    <input type="radio"
+                                                                                                           name="payment_type"
+                                                                                                           id="type_2">
+                                                                                                    <label for="type_2">Cash</label>
+                                                                                                </div>
+                                                                                                <div class="col-md-3">
+                                                                                                    <input type="radio"
+                                                                                                           name="payment_type"
+                                                                                                           id="type_3">
+                                                                                                    <label for="type_3">Other</label>
+                                                                                                </div>
+                                                                                                <div class="col-md-3">
+                                                                                                    <input type="checkbox"
+                                                                                                           name="pay_all"
+                                                                                                           id="all">
+                                                                                                    <label for="all">All Items</label>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-md-12">
+                                                                                            <button class="btn btn-primary btn-block"
+                                                                                                    type="submit">Pay
+                                                                                            </button>
+                                                                                            <button class="btn btn-danger btn-block"
+                                                                                                    type="button"
+                                                                                                    data-bs-dismiss="modal"
+                                                                                                    aria-label="Close"
+                                                                                                    data-bs-original-title=""
+                                                                                                    title="">Close
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </form>
+                                                                                <div class="mt-2 row">
+                                                                                    <button class="btn btn-gray1 w-100 payment-product-button">Product Name - 10.40£</button>
+                                                                                    <button class="btn btn-gray3 w-100 payment-product-button">Product Name - 10.40£</button>
+                                                                                    <button class="btn btn-gray1 w-100 payment-product-button">Product Name - 10.40£</button>
+                                                                                    <button class="btn btn-gray1 w-100 payment-product-button">Product Name - 10.40£</button>
+                                                                                    <button class="btn btn-gray3 w-100 payment-product-button">Product Name - 10.40£</button>
+                                                                                    <button class="btn btn-gray3 w-100 payment-product-button">Product Name - 10.40£</button>
+                                                                                    <button class="btn btn-gray3 w-100 payment-product-button">Product Name - 10.40£</button>
+                                                                                    <button class="btn btn-gray3 w-100 payment-product-button">Product Name - 10.40£</button>
+                                                                                    <button class="btn btn-gray3 w-100 payment-product-button">Product Name - 10.40£</button>
+                                                                                    <button class="btn btn-gray3 w-100 payment-product-button">Product Name - 10.40£</button>
+                                                                                    <button class="btn btn-gray3 w-100 payment-product-button">Product Name - 10.40£</button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -378,8 +481,35 @@
                                                             <tr>
                                                                 <td class="bg-d9">Diet Coke - Normal</td>
                                                                 <td class="bg-d9">1</td>
-                                                                <td class="bg-d9">&#163;2.10</td>
-                                                                <td class="bg-d9">&#163;2.10</td>
+                                                                <td class="bg-d9">&#163;60.10</td>
+                                                                <td class="bg-d9">&#163;240.10</td>
+                                                                <td class="orderItemCancel"><a class="btn btn-danger"
+                                                                                               href="/cafevigo/Order/DeleteItem?tableId=b97f9c94-94f6-48a5-a162-a3404b958acf&amp;orderItemId=6d28a8d6-a2d5-4493-a8e4-46f621d47721&amp;tableName=Table%201"><i
+                                                                        class="fa-solid fa-ban"></i></a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="bg-d9">Diet Cola - 1</td>
+                                                                <td class="bg-d9">1</td>
+                                                                <td class="bg-d9">&#163;60.10</td>
+                                                                <td class="bg-d9">&#163;240.10</td>
+                                                                <td class="orderItemCancel"><a class="btn btn-danger"
+                                                                                               href="/cafevigo/Order/DeleteItem?tableId=b97f9c94-94f6-48a5-a162-a3404b958acf&amp;orderItemId=6d28a8d6-a2d5-4493-a8e4-46f621d47721&amp;tableName=Table%201"><i
+                                                                        class="fa-solid fa-ban"></i></a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="bg-d9">Apple</td>
+                                                                <td class="bg-d9">1</td>
+                                                                <td class="bg-d9">&#163;680.10</td>
+                                                                <td class="bg-d9">&#163;2400.10</td>
+                                                                <td class="orderItemCancel"><a class="btn btn-danger"
+                                                                                               href="/cafevigo/Order/DeleteItem?tableId=b97f9c94-94f6-48a5-a162-a3404b958acf&amp;orderItemId=6d28a8d6-a2d5-4493-a8e4-46f621d47721&amp;tableName=Table%201"><i
+                                                                        class="fa-solid fa-ban"></i></a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="bg-d9">Full Scotish Breakfast Vegan</td>
+                                                                <td class="bg-d9">1</td>
+                                                                <td class="bg-d9">&#163;1.10</td>
+                                                                <td class="bg-d9">&#163;5.50</td>
                                                                 <td class="orderItemCancel"><a class="btn btn-danger"
                                                                                                href="/cafevigo/Order/DeleteItem?tableId=b97f9c94-94f6-48a5-a162-a3404b958acf&amp;orderItemId=6d28a8d6-a2d5-4493-a8e4-46f621d47721&amp;tableName=Table%201"><i
                                                                         class="fa-solid fa-ban"></i></a></td>

@@ -43,11 +43,18 @@ img.bilen-logo {
     background-color: #556273 !important;
 }
 
+.payment-product-button{
+    flex: 0 0 31.3% !important;
+    margin: 1% auto !important;
+    width: 31.3% !important;
+    min-height: 4rem !important;
+}
+
 .orderItemCancel > .btn.btn-danger {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 45px;
+    min-height: 48px;
 }
 
 td.bg-556 {
@@ -162,7 +169,9 @@ div.categoryOrderList::-webkit-scrollbar-track {
     border-radius: 10px;
     height: 5px;
 }
-
+.my-pt-3 {
+    padding-top: 1rem !important;
+}
 /* Handle */
 div.categoryOrderList::-webkit-scrollbar-thumb {
     background: #999999;
