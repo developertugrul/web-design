@@ -34,6 +34,12 @@ const toggleProductList = () => {
     $("#mobileProductList").toggle();
 }
 
+const partialPaymentDivDisplay = () => {
+    $("#partialPaymentDiv").toggle();
+    $("#mainPaymentDiv").toggle();
+    $("#invoiceDiv").toggle();
+}
+
 $(document).ready(function() {
     let long_name_td = $(".bg-d9");
     long_name_td.each(function() {
