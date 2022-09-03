@@ -1,30 +1,34 @@
-$("#sidebar-toggle").click(
-    function() {
-        if ($("#sidebar-toggle").hasClass("icon-align-left")) {
-            $("#sidebar-toggle").removeClass("icon-align-left");
-            $("#sidebar-toggle").addClass("icon-align-right");
-        }else{
-            $("#sidebar-toggle").removeClass("icon-align-right");
-            $("#sidebar-toggle").addClass("icon-align-left");
-        }
+const changeToggleSidebarIcons = () => {
+
+    if ($("#sidebar-toggle").hasClass("icon-align-left")) {
+        $("#sidebar-toggle").removeClass("icon-align-left");
+        $("#sidebar-toggle").addClass("icon-align-right");
+    } else {
+        $("#sidebar-toggle").removeClass("icon-align-right");
+        $("#sidebar-toggle").addClass("icon-align-left");
     }
+
+}
+
+$("#sidebar-toggle").click(
+    changeToggleSidebarIcons()
 );
 
-function changePrice(){
+function changePrice() {
     alert("chancing price");
 }
 
-const showCategoryButtons =  (categoryName) => {
-    $("#"+categoryName).toggle();
+const showCategoryButtons = (categoryName) => {
+    $("#" + categoryName).toggle();
 }
 
-const showCategoryButtonsMobile =  (categoryName) => {
-    let is_displayed = $("#"+categoryName).css("display");
+const showCategoryButtonsMobile = (categoryName) => {
+    let is_displayed = $("#" + categoryName).css("display");
     if (is_displayed === "none") {
         $("#mobileCategoryList").children("div").hide();
-        $("#"+categoryName).toggle();
+        $("#" + categoryName).toggle();
         $("#mobileProductList").show();
-    }else{
+    } else {
         $("#mobileCategoryList").children("div").hide();
         $("#mobileProductList").hide();
     }
@@ -40,9 +44,20 @@ const partialPaymentDivDisplay = () => {
     $("#invoiceDiv").toggle();
 }
 
-$(document).ready(function() {
+const hideSidebar = () => {
+    let screenSize = $(window).width();
+
+    if (screenSize < 768) {
+        $('.main-nav').toggleClass('close_icon');
+        $('.page-main-header').toggleClass('close_icon');
+
+        changeToggleSidebarIcons();
+    }
+}
+
+$(document).ready(function () {
     let long_name_td = $(".bg-d9");
-    long_name_td.each(function() {
+    long_name_td.each(function () {
         let long_name = $(this).text();
         console.log(long_name);
         if (long_name.length > 2) {
@@ -55,4 +70,24 @@ $(document).ready(function() {
             }
         }
     });
+
+    $('.main-nav').toggleClass('close_icon');
+    $('.page-main-header').toggleClass('close_icon');
+
+    changeToggleSidebarIcons();
+
 });
+hideSidebar();
+
+$("#mainPaymentDivPayButton").click(function () {
+    let button = $(this);
+    button.html("<img src='assets/svg/bag.svg' alt='bag' style='width: 45px;'>");
+});
+
+const getPartialPayment = () => {
+    let partialPayment = $("#partialPayment").val();
+    let totalAmount = $("#totalAmount").val();
+    let partialPaymentAmount = (totalAmount * partialPayment) / 100;
+    $("#partialPaymentAmount").val(partialPaymentAmount);
+}
+

@@ -41,7 +41,7 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
     <!-- App css-->
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-    <link id="color" rel="stylesheet" href="../assets/css/color-1.css" media="screen">
+    <link id="color" rel="stylesheet" href="../assets/css/color-5.css" media="screen">
     <!-- Responsive css-->
     <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
@@ -369,139 +369,263 @@
                                                                     <div class="modal-dialog modal-lg">
                                                                         <div class="modal-content">
                                                                             <div class="modal-header text-start">
-                                                                                <h4 class="modal-title text-center"
-                                                                                    id="paymentModalLabel">Fiş Tutarı: £65</h4>
-                                                                                <button class="btn-close" type="button"
-                                                                                        data-bs-dismiss="modal"
-                                                                                        aria-label="Close"></button>
+                                                                                <div class="col-md-4">
+                                                                                    <div class="float-start allitem">
+                                                                                        <input type="checkbox"
+                                                                                               id="allitem"
+                                                                                               name="allitems" checked>
+                                                                                        <label
+                                                                                                for="allitem">All
+                                                                                            Items</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-4 text-center">
+                                                                                    <h4 class="modal-title text-center"
+                                                                                        id="paymentModalLabel">
+
+                                                                                    <span
+                                                                                            class="text-uppercase">Total</span>:
+                                                                                        <span class="bold">£65</span>
+                                                                                    </h4>
+                                                                                </div>
+                                                                                <div class="col-md-4">
+                                                                                    <button class="btn-close top-0"
+                                                                                            type="button"
+                                                                                            data-bs-dismiss="modal"
+                                                                                            aria-label="Close"></button>
+                                                                                </div>
                                                                             </div>
                                                                             <div class="modal-body text-start">
                                                                                 <form action="">
-                                                                                    <div class="row" id="mainPaymentDiv">
-                                                                                        <div class="col-md-3 text-start">
-                                                                                            <h6>Bekleyen ödeme:</h6>
+                                                                                    <div class="row"
+                                                                                         id="mainPaymentDiv">
+                                                                                        <div class="col-md-5 col-sm-3">
+                                                                                            <table class="table table-bordered table-sm">
+                                                                                                <tbody>
+                                                                                                <tr>
+                                                                                                    <th>Paid
+                                                                                                        Amount:
+                                                                                                    </th>
+                                                                                                    <td>
+                                                                                                        £34000.15
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <th>
+                                                                                                        Remaining
+                                                                                                        Amount:
+                                                                                                    </th>
+                                                                                                    <td>
+                                                                                                        £10000.65
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr class="text-uppercase">
+                                                                                                    <th>
+                                                                                                        Grand Total:
+                                                                                                    </th>
+                                                                                                    <td class="bold" style="font-size: 1rem;">£44000.75
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                </tbody>
+                                                                                            </table>
                                                                                         </div>
-                                                                                        <div class="col-md-3 text-start">
-                                                                                            <h6>£41.00</h6>
+                                                                                        <div class="col-md-2 col-sm-3 col-6"
+                                                                                             id="mainPaymentPayButtonDiv">
+                                                                                            <button class="my-pay-button btn-primary"
+                                                                                                    type="button"
+                                                                                                    id="mainPaymentDivPayButton">
+                                                                                                Pay
+                                                                                            </button>
                                                                                         </div>
-                                                                                        <div class="col-md-3 text-start">
-                                                                                            <h6>Ödenmiş tutar:</h6>
-                                                                                        </div>
-                                                                                        <div class="col-md-3 text-start">
-                                                                                            <h6>£24.00</h6>
-                                                                                        </div>
-                                                                                        <div class="col-md-3 text-start">
-                                                                                            <h6>Hesaplanan tutar:</h6>
-                                                                                        </div>
-                                                                                        <div class="col-md-9 text-start">
-                                                                                            <h6>£0.00</h6>
-                                                                                        </div>
-                                                                                        <div class="col-md-12">
+                                                                                        <div class="col-md-5 col-sm-6 col-6">
                                                                                             <div class="row">
-                                                                                                <div class="col-md-3">
-                                                                                                    <input type="radio"
-                                                                                                           name="payment_type"
-                                                                                                           id="type_1">
-                                                                                                    <label for="type_1">Card</label>
+                                                                                                <div class="col-md-12">
+                                                                                                    <div class="btn-radio pt-2 text-center">
+                                                                                                        <div class="btn-group"
+                                                                                                             data-bs-toggle="buttons">
+                                                                                                            <div class="btn get-bill py-2">
+                                                                                                                <div class="radio radio-primary">
+                                                                                                                    <input id="radio766"
+                                                                                                                           type="radio"
+                                                                                                                           name="radio1"
+                                                                                                                           value="option1">
+                                                                                                                    <label for="radio766">Card</label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="btn get-bill py-2 active">
+                                                                                                                <div class="radio radio-primary">
+                                                                                                                    <input id="radio877"
+                                                                                                                           type="radio"
+                                                                                                                           name="radio1"
+                                                                                                                           value="option1"
+                                                                                                                           checked="">
+                                                                                                                    <label for="radio877">Cash</label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="btn get-bill py-2 active">
+                                                                                                                <div class="radio radio-primary">
+                                                                                                                    <input id="radio888"
+                                                                                                                           type="radio"
+                                                                                                                           name="radio1"
+                                                                                                                           value="option1"
+                                                                                                                           checked="">
+                                                                                                                    <label for="radio888">Other</label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
                                                                                                 </div>
-                                                                                                <div class="col-md-3">
-                                                                                                    <input type="radio"
-                                                                                                           name="payment_type"
-                                                                                                           id="type_2">
-                                                                                                    <label for="type_2">Cash</label>
-                                                                                                </div>
-                                                                                                <div class="col-md-3">
-                                                                                                    <input type="radio"
-                                                                                                           name="payment_type"
-                                                                                                           id="type_3">
-                                                                                                    <label for="type_3">Other</label>
-                                                                                                </div>
-                                                                                                <div class="col-md-3">
-                                                                                                    <input type="checkbox"
-                                                                                                           name="pay_all"
-                                                                                                           id="all">
-                                                                                                    <label for="all">All Items</label>
+                                                                                                <div class="col-md-12 mt-3 partialPaymentDisplayButton">
+                                                                                                    <button class="btn back-button text-uppercase py-2 d-block w-100"
+                                                                                                            type="button"
+                                                                                                            onclick="partialPaymentDivDisplay()">
+                                                                                                        Partial Payment
+                                                                                                    </button>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div class="col-md-12">
-                                                                                            <button class="btn btn-primary btn-block"
-                                                                                                    type="button" onclick="partialPaymentDivDisplay()">Partial Payment
-                                                                                            </button>
-                                                                                            <button class="btn btn-danger btn-block"
+                                                                                        <div class="col-6 mt-3 allitemMobile">
+                                                                                            <input type="checkbox"
+                                                                                                   id="allitemMobile"
+                                                                                                   name="allitems" checked>
+                                                                                            <label
+                                                                                                    for="allitemMobile">All
+                                                                                                Items</label>
+                                                                                        </div>
+                                                                                        <div class="col-md-12 col-6 mt-3 partialPaymentMobileDisplayButton">
+                                                                                            <button class="btn back-button text-uppercase py-2 d-block w-100"
                                                                                                     type="button"
-                                                                                                    data-bs-dismiss="modal"
-                                                                                                    aria-label="Close"
-                                                                                                    data-bs-original-title=""
-                                                                                                    title="">Close
-                                                                                            </button>
-                                                                                            <button class="btn btn-primary btn-block"
-                                                                                                    type="submit">Pay
+                                                                                                    onclick="partialPaymentDivDisplay()">
+                                                                                                Partial Payment
                                                                                             </button>
                                                                                         </div>
                                                                                     </div>
-                                                                                    <div id="partialPaymentDiv" class="row" style="display: none">
-                                                                                        <div class="col-md-3 text-start">
-                                                                                            <h6>Bekleyen ödeme:</h6>
+                                                                                    <div id="partialPaymentDiv"
+                                                                                         class="row"
+                                                                                         style="display: none">
+                                                                                        <div class="col-md-5">
+                                                                                            <table class="table table-bordered table-sm">
+                                                                                                <tbody>
+                                                                                                <tr>
+                                                                                                    <th>Paid
+                                                                                                        Amount:
+                                                                                                    </th>
+                                                                                                    <td>
+                                                                                                        £34000.15
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <th>
+                                                                                                        Remaining
+                                                                                                        Amount:
+                                                                                                    </th>
+                                                                                                    <td>
+                                                                                                        £10000.65
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr class="text-uppercase">
+                                                                                                    <th>
+                                                                                                        Grand Total:
+                                                                                                    </th>
+                                                                                                    <td class="bold" style="font-size: 1rem;">£44000.75
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                </tbody>
+                                                                                            </table>
                                                                                         </div>
-                                                                                        <div class="col-md-3 text-start">
-                                                                                            <h6>£41.00</h6>
-                                                                                        </div>
-                                                                                        <div class="col-md-3 text-start">
-                                                                                            <h6>Ödenmiş tutar:</h6>
-                                                                                        </div>
-                                                                                        <div class="col-md-3 text-start">
-                                                                                            <h6>£24.00</h6>
-                                                                                        </div>
-                                                                                        <div class="col-md-3 text-start">
-                                                                                            <h6>Hesaplanan tutar:</h6>
-                                                                                        </div>
-                                                                                        <div class="col-md-9 text-start">
-                                                                                            <h6>£0.00</h6>
-                                                                                        </div>
-
-                                                                                        <div class="col-md-12 mt-2">
-                                                                                            <div class="row">
-                                                                                                <div class="col-md-3">
-                                                                                                    <input type="number" class="form-control" step="0.01" placeholder="Card">
-                                                                                                </div>
-                                                                                                <div class="col-md-3">
-                                                                                                    <input type="number" class="form-control" step="0.01" placeholder="Cash">
-                                                                                                </div>
-                                                                                                <div class="col-md-3">
-                                                                                                    <input type="number" class="form-control" step="0.01" placeholder="Other">
+                                                                                            <div class="col-md-2"
+                                                                                                 id="partialPaymentPayButtonDiv">
+                                                                                                <button class="my-pay-button btn-primary"
+                                                                                                        type="button"
+                                                                                                        id="partialPaymentPayButton">
+                                                                                                    Pay
+                                                                                                </button>
+                                                                                            </div>
+                                                                                            <div class="col-md-5">
+                                                                                                <div class="row">
+                                                                                                    <div class="col-md-12">
+                                                                                                        <div class="btn-radio">
+                                                                                                            <div class="row">
+                                                                                                                <div class="col-md-6 mb-1">
+                                                                                                                    <input id="radio7666"
+                                                                                                                           type="number"
+                                                                                                                           name="cash"
+                                                                                                                           step="0.01"
+                                                                                                                           min="0"
+                                                                                                                           max="10000.65"
+                                                                                                                           class="form-control"
+                                                                                                                           placeholder="Cash"
+                                                                                                                           value="">
+                                                                                                                </div>
+                                                                                                                <div class="col-md-6 mb-1">
+                                                                                                                        <input id="radio8776"
+                                                                                                                               type="number"
+                                                                                                                               name="card"
+                                                                                                                               step="0.01"
+                                                                                                                               min="0"
+                                                                                                                               max="10000.65"
+                                                                                                                               placeholder="Card"
+                                                                                                                               class="form-control"
+                                                                                                                               value="">
+                                                                                                                </div>
+                                                                                                                <div class="col-md-6 my-1">
+                                                                                                                        <input id="radio8886"
+                                                                                                                               type="number"
+                                                                                                                               name="radio1"
+                                                                                                                               step="0.01"
+                                                                                                                               min="0"
+                                                                                                                               class="form-control"
+                                                                                                                               placeholder="Other"
+                                                                                                                               value="">
+                                                                                                                </div>
+                                                                                                                <div class="col-md-6 my-1">
+                                                                                                                    <button class="btn back-button text-uppercase py-2 d-block w-100"
+                                                                                                                            type="button"
+                                                                                                                            onclick="partialPaymentDivDisplay()">
+                                                                                                                        Back
+                                                                                                                    </button>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
                                                                                                 </div>
                                                                                             </div>
-                                                                                        </div>
-                                                                                        <div class="col-md-12 mt-2">
-                                                                                            <button class="btn btn-primary btn-block"
-                                                                                                    type="submit">Pay
-                                                                                            </button>
-                                                                                            <button class="btn btn-primary btn-block"
-                                                                                                    type="button" onclick="partialPaymentDivDisplay()">Partial Payment
-                                                                                            </button>
-                                                                                            <button class="btn btn-danger btn-block"
-                                                                                                    type="button"
-                                                                                                    data-bs-dismiss="modal"
-                                                                                                    aria-label="Close"
-                                                                                                    data-bs-original-title=""
-                                                                                                    title="">Close
-                                                                                            </button>
-                                                                                        </div>
                                                                                     </div>
                                                                                 </form>
                                                                                 <div class="mt-2 row" id="invoiceDiv">
-                                                                                    <button class="btn btn-gray1 w-100 payment-product-button">Product Name - 10.40£</button>
-                                                                                    <button class="btn btn-gray3 w-100 payment-product-button">Product Name - 10.40£</button>
-                                                                                    <button class="btn btn-gray1 w-100 payment-product-button">Product Name - 10.40£</button>
-                                                                                    <button class="btn btn-gray1 w-100 payment-product-button">Product Name - 10.40£</button>
-                                                                                    <button class="btn btn-gray3 w-100 payment-product-button">Product Name - 10.40£</button>
-                                                                                    <button class="btn btn-gray3 w-100 payment-product-button">Product Name - 10.40£</button>
-                                                                                    <button class="btn btn-gray3 w-100 payment-product-button">Product Name - 10.40£</button>
-                                                                                    <button class="btn btn-gray3 w-100 payment-product-button">Product Name - 10.40£</button>
-                                                                                    <button class="btn btn-gray3 w-100 payment-product-button">Product Name - 10.40£</button>
-                                                                                    <button class="btn btn-gray3 w-100 payment-product-button">Product Name - 10.40£</button>
-                                                                                    <button class="btn btn-gray3 w-100 payment-product-button">Product Name - 10.40£</button>
+                                                                                    <button class="btn btn-gray1 w-100 payment-product-button">
+                                                                                        Product Name - 10.40£
+                                                                                    </button>
+                                                                                    <button class="btn btn-gray3 w-100 payment-product-button">
+                                                                                        Product Name - 10.40£
+                                                                                    </button>
+                                                                                    <button class="btn btn-gray1 w-100 payment-product-button">
+                                                                                        Product Name - 10.40£
+                                                                                    </button>
+                                                                                    <button class="btn btn-gray1 w-100 payment-product-button">
+                                                                                        Product Name - 10.40£
+                                                                                    </button>
+                                                                                    <button class="btn btn-gray3 w-100 payment-product-button">
+                                                                                        Product Name - 10.40£
+                                                                                    </button>
+                                                                                    <button class="btn btn-gray3 w-100 payment-product-button">
+                                                                                        Product Name - 10.40£
+                                                                                    </button>
+                                                                                    <button class="btn btn-gray3 w-100 payment-product-button">
+                                                                                        Product Name - 10.40£
+                                                                                    </button>
+                                                                                    <button class="btn btn-gray3 w-100 payment-product-button">
+                                                                                        Product Name - 10.40£
+                                                                                    </button>
+                                                                                    <button class="btn btn-gray3 w-100 payment-product-button">
+                                                                                        Product Name - 10.40£
+                                                                                    </button>
+                                                                                    <button class="btn btn-gray3 w-100 payment-product-button">
+                                                                                        Product Name - 10.40£
+                                                                                    </button>
+                                                                                    <button class="btn btn-gray3 w-100 payment-product-button">
+                                                                                        Product Name - 10.40£
+                                                                                    </button>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -574,17 +698,18 @@
                                                             </tbody>
                                                             <tfoot class="table-active">
                                                             <tr>
-                                                                <td id="orderTotalAmount" colspan=6 class="text-end">
-                                                                    Grand Total: &#163;10.09
+                                                                <td id="orderRemainingAmount" colspan=6
+                                                                    class="text-end">Remainig Amount: &#163;10.09
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td id="orderPaidAmount" colspan=6 class="text-end">Paid
                                                                     Amount: &#163;0.00
                                                                 </td>
+                                                            </tr>
                                                             <tr>
-                                                                <td id="orderRemainingAmount" colspan=6
-                                                                    class="text-end">Remainig Amount: &#163;10.09
+                                                                <td id="orderTotalAmount" colspan=6 class="text-end">
+                                                                    TOTAL: &#163;107.09
                                                                 </td>
                                                             </tr>
                                                             </tfoot>
@@ -593,18 +718,18 @@
                                                     </div>
                                                     <div class="card-footer">
                                                         <div class="row">
-                                                            <div class="col-md-3 p-0 text-center">
+                                                            <div class="col-md-3 col-6 p-0 my-1 text-center">
                                                                 <a href="" class="common-payment-button cancel-order">Cancel
                                                                     Order</a>
                                                             </div>
-                                                            <div class="col-md-3 p-0 text-center">
+                                                            <div class="col-md-3 p-0 col-6 my-1 text-center">
                                                                 <a href="" class="common-payment-button back-button">Back</a>
                                                             </div>
-                                                            <div class="col-md-3 p-0 text-center">
+                                                            <div class="col-md-3 p-0 col-6 my-1 text-center">
                                                                 <a href="" class="common-payment-button get-bill">Get
                                                                     Bill</a>
                                                             </div>
-                                                            <div class="col-md-3 p-0 text-center">
+                                                            <div class="col-md-3 p-0 col-6 my-1 text-center">
                                                                 <a href="" class="common-payment-button call-kitchen">Call
                                                                     Kitchen</a>
                                                             </div>
@@ -2138,18 +2263,6 @@
                 </div>
                 <!-- Container-fluid Ends-->
             </div>
-            <!-- footer start-->
-            <footer class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6 footer-copyright">
-                            <p class="mb-0">Copyright 2021-2022 © RMS All rights reserved.</p>
-                        </div>
-                        <div class="col-md-6">
-                        </div>
-                    </div>
-                </div>
-            </footer>
         </div>
     </div>
 
@@ -2192,8 +2305,6 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-secondary text-uppercase" type="button" data-bs-dismiss="modal">Cancel
-                    </button>
                     <button class="btn btn-success text-uppercase" type="button">Combine</button>
                 </div>
             </div>
@@ -2679,7 +2790,6 @@
 <script src="/assets/js/counter/jquery.counterup.min.js"></script>
 <script src="/assets/js/counter/counter-custom.js"></script>
 <script src="/assets/js/custom-card/custom-card.js"></script>
-<script src="/assets/js/notify/bootstrap-notify.min.js"></script>
 <script src="/assets/js/vector-map/jquery-jvectormap-2.0.2.min.js"></script>
 <script src="/assets/js/vector-map/map/jquery-jvectormap-world-mill-en.js"></script>
 <script src="/assets/js/vector-map/map/jquery-jvectormap-us-aea-en.js"></script>
@@ -2940,7 +3050,6 @@
                 }
             })
         });
-
 
     });
 </script>

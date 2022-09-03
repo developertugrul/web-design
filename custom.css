@@ -12,138 +12,182 @@
     margin-bottom: -4px;
 }
 
+.my-pay-button{
+    border-radius: 7px;
+    display: block;
+    width: 100%;
+    margin: auto;
+    font-weight: bolder;
+    text-transform: uppercase;
+    min-height: 6rem;
+}
+
+div.radio > label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .72rem;
+}
+
+div.radio > input {
+    float: right;
+    display: inline-block;
+    height: 0;
+}
+
+.radio-cs-orange{
+    color: #fff;
+    background-color: orange;
+}
+.top-0{
+    top: 0 !important;
+}
+.table-sm > tbody > tr > td {
+    padding: .3rem;
+    font-size: .875rem;
+}
+.table-sm > tbody > tr > th {
+    padding: .3rem;
+    font-size: .875rem;
+}
+
+#mainPaymentPayButtonDiv{
+    display:flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
 img.bilen-logo {
-    max-width: 85% !important;
-    height: auto;
-    width: 4.5rem;
+max-width: 85% !important;
+height: auto;
+width: 4.5rem;
 }
 
 .common-payment-button:last-child {
-    padding-right: 0 !important;
+padding-right: 0 !important;
 }
 
 .common-payment-button:first-child {
-    padding-left: 0 !important;
-    margin-left: 3px;
+padding-left: 0 !important;
+margin-left: 3px;
 }
 
 .color-bilenium {
-    color: #0E5B90 !important;
+color: #0E5B90 !important;
 }
 
 .dashboard-default-sec .card .card-header.pls, .dashboard-default-sec .card .card-body, .dashboard-default-sec .card .card-footer {
-    padding: 0 9px 20px !important;
+padding: 0 9px 20px !important;
 }
 
 .bg-d9 {
-    background-color: #69788c !important;
+background-color: #69788c !important;
 }
 
 .bg-556 {
-    background-color: #556273 !important;
+background-color: #556273 !important;
 }
 
 .payment-product-button{
-    flex: 0 0 31.3% !important;
-    margin: 1% auto !important;
-    width: 31.3% !important;
-    min-height: 4rem !important;
+flex: 0 0 31.3% !important;
+margin: 1% auto !important;
+width: 31.3% !important;
+min-height: 4rem !important;
 }
 
 .orderItemCancel > .btn.btn-danger {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 48px;
 }
 
 td.bg-556 {
-    font-size: 0.8rem;
-    padding-top: 0px;
-    padding-bottom: 0px;
+font-size: 0.8rem;
+padding-top: 0px;
+padding-bottom: 0px;
 }
 
 .font18 {
-    font-size: 17px;
+font-size: 17px;
 }
 
 .world-div {
-    padding-top: 3px;
+padding-top: 3px;
 }
 
 i#sidebar-toggle {
-    font-weight: 600;
-    font-size: 1.2rem;
-    color: #24695c;
+font-weight: 600;
+font-size: 1.2rem;
+color: #24695c;
 }
 
 .font13 {
-    font-size: 13px;
+font-size: 13px;
 }
 
 .custom-scrollbar > li > a > span {
-    font-size: .875rem;
-    display: inline-block;
-    margin-left: 0.5rem;
+font-size: .875rem;
+display: inline-block;
+margin-left: 0.5rem;
 }
 
 .svg-sidebar {
-    width: 1.3rem;
-    height: 1.3rem;
+width: 1.3rem;
+height: 1.3rem;
 }
 
 .language-svg {
-    width: 1.3rem;
+width: 1.3rem;
 }
 
 .flexit {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
 }
 
 .waiter-buttons {
-    display: block;
-    flex: 0 0 15%;
-    width: 15%;
-    margin: 5px;
+display: block;
+flex: 0 0 15%;
+width: 15%;
+margin: 5px;
 }
 
 div.waiter-buttons > a.btn.py-2 {
-    min-height: 10rem;
-    font-size: 12px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: start;
-    flex-wrap: wrap;
-    padding-top: 1.5rem !important;
+min-height: 12rem;
+font-size: 12px;
+display: flex;
+text-align: center;
+justify-content: center;
+align-items: start;
+flex-wrap: wrap;
+padding-top: 1.5rem !important;
 }
 
 .modal-title {
-    width: 100%;
+width: 100%;
 }
 
 .borderit {
-    border: 1px solid #ebebeb;
-    padding: .5rem .2rem .2rem .5rem;
+border: 1px solid #ebebeb;
+padding: .5rem .2rem .2rem .5rem;
 }
 
 .quantity-input {
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+display: flex;
+flex-wrap: wrap;
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
 }
 
 .btn-qt {
-    display: block;
-    width: 8.2%;
-    border: 1px solid lightgray;
-    padding: 0.4rem 0.1rem 0.1rem 0.5rem;
+display: block;
+width: 8.2%;
+border: 1px solid lightgray;
+padding: 0.4rem 0.1rem 0.1rem 0.5rem;
 }
 
 /* set width of logo as the minimum of 100px & 100vw */
@@ -411,4 +455,90 @@ table.dty > tbody > tr > th {
     color: white;
     width: unset !important;
     float: right;
+}
+
+
+#mobileEnable {
+    display: none;
+}
+
+.orderItemCancel > .btn.btn-danger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 32px;
+    height: 32px !important;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.table-border-vertical > tbody > tr td:last-child{
+    border-right: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 3rem;
+}
+
+table#orderTable > tbody > tr > td {
+    font-weight: bold;
+}
+
+.table-border-vertical > tbody > tr:last-child > td:last-child{
+    display: table-cell;
+}
+.left-menu-header > ul > li > button {
+    background-color: #135C8E !important;
+    border-color: #135C8E !important;
+}
+
+img.img-fluid.bilen-logo {
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+    display: inline-block;
+}
+
+.page-wrapper.compact-wrapper .page-body-wrapper header .sidebar-user p {
+    padding-left: 0 !important;
+    text-align: center !important;
+    max-width: unset !important;
+}
+
+.dateOfCharts{
+    display: none;
+}
+.page-wrapper.compact-wrapper .page-body-wrapper header .sidebar-user h6 {
+    margin-top: 0 !important;
+    padding-left: 0 !important;
+    text-align: center !important;
+}
+
+.btn-primary {
+    background-color: #24695c  !important;
+    border-color: #24695c  !important;
+}
+
+.dark-only > .page-wrapper > .page-body-wrapper > .page-body > .dashboard-default-sec > .flexit > .waiter-buttons > .btn-table-empty > span.h5 {
+    background-color: #fefefe;
+    border-color: #135C8E;
+    color: #135C8E;
+}
+
+.table.table-bordered.table-sm > tbody > tr > th {
+    font-weight: normal;
+}
+.table.table-bordered.table-sm > tbody > tr:last-child > th{
+    font-weight: bold;
+}
+
+.partialPaymentMobileDisplayButton{
+    display: none;
+}
+
+.allitemMobile{
+    display: none;
+}
+.allitem{
+    display: block;
 }

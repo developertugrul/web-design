@@ -41,7 +41,7 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
     <!-- App css-->
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-    <link id="color" rel="stylesheet" href="../assets/css/color-1.css" media="screen">
+    <link id="color" rel="stylesheet" href="../assets/css/color-5.css" media="screen">
     <!-- Responsive css-->
     <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
@@ -235,18 +235,57 @@
             <div class="container-fluid dashboard-default-sec">
 
                 <div class="row">
-                    <div class="col-md-5">
-                        <div class="btn-group btn-group-pill" role="group" aria-label="Basic example">
-                            <button class="btn btn-outline-dark" type="button">
-                                Daily
-                            </button>
-                            <button class="btn btn-dark" type="button">
-                                Weekly
-                            </button>
-                            <button class="btn btn-outline-dark" type="button">
-                                Monthly
-                            </button>
+
+                    <div class="col-md-12">
+                        <div class="btn-radio pb-2 text-center">
+                            <div class="btn-group"
+                                 data-bs-toggle="buttons">
+                                <div class="btn get-bill py-2">
+                                    <div class="radio radio-primary">
+                                        <input id="radio766"
+                                               type="radio"
+                                               name="radio1"
+                                               value="daily"
+                                               onchange="changeCharts()"
+                                               checked="">
+                                        <label for="radio766">Daily <span class="dateOfCharts">12.09.22</span></label>
+                                    </div>
+                                </div>
+                                <div class="btn get-bill py-2 active">
+                                    <div class="radio radio-primary">
+                                        <input id="radio877"
+                                               type="radio"
+                                               name="radio1"
+                                               onchange="changeCharts()"
+                                               value="weekly">
+                                        <label for="radio877">Weekly <span class="dateOfCharts">12.09.22 - 19.09.22</span></label>
+                                    </div>
+                                </div>
+                                <div class="btn get-bill py-2 active">
+                                    <div class="radio radio-primary">
+                                        <input id="radio888"
+                                               type="radio"
+                                               name="radio1"
+                                               onchange="changeCharts()"
+                                               value="monthly">
+                                        <label for="radio888">Monthly <span class="dateOfCharts">01.09.22 - 31.09.22</span></label>
+                                    </div>
+                                </div>
+                                <div class="btn get-bill py-2 active">
+                                    <div class="radio radio-primary">
+                                        <input id="radio9"
+                                               type="radio"
+                                               name="radio1"
+                                               onchange="changeCharts()"
+                                               value="custom-date">
+                                        <label for="radio9">Select date</label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <div class="col-md-4 mx-auto py-2" id="custom-date" style="display:none;">
+                        <input class="form-control digits" type="text" name="daterange" value="01/15/2022 - 02/15/2022">
                     </div>
                 </div>
 
@@ -300,20 +339,6 @@
             </div>
             <!-- Container-fluid Ends-->
         </div>
-        <!-- footer start-->
-        <footer class="footer">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 footer-copyright">
-                        <p class="mb-0">Copyright 2021-22 © viho All rights reserved.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="pull-right mb-0">Hand crafted & made with <i class="fa fa-heart font-secondary"></i>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
     </div>
 </div>
 <!-- latest jquery-->
@@ -340,7 +365,6 @@
 <script src="../assets/js/counter/jquery.counterup.min.js"></script>
 <script src="../assets/js/counter/counter-custom.js"></script>
 <script src="../assets/js/custom-card/custom-card.js"></script>
-<script src="../assets/js/notify/bootstrap-notify.min.js"></script>
 <script src="../assets/js/vector-map/jquery-jvectormap-2.0.2.min.js"></script>
 <script src="../assets/js/vector-map/map/jquery-jvectormap-world-mill-en.js"></script>
 <script src="../assets/js/vector-map/map/jquery-jvectormap-us-aea-en.js"></script>
@@ -350,7 +374,6 @@
 <script src="../assets/js/vector-map/map/jquery-jvectormap-in-mill.js"></script>
 <script src="../assets/js/vector-map/map/jquery-jvectormap-asia-mill.js"></script>
 <script src="../assets/js/dashboard/default.js"></script>
-<script src="../assets/js/notify/index.js"></script>
 <script src="../assets/js/datepicker/date-picker/datepicker.js"></script>
 <script src="../assets/js/datepicker/date-picker/datepicker.en.js"></script>
 <script src="../assets/js/datepicker/date-picker/datepicker.custom.js"></script>
@@ -361,9 +384,18 @@
 <!-- Plugins JS Ends-->
 <!-- Theme js-->
 <script src="../assets/js/script.js"></script>
-<script src="../assets/js/theme-customizer/customizer.js"></script>
 <!-- login js-->
 <!-- Plugin used-->
+<script>
+    const changeCharts = () => {
+      let choose = $('input[name="radio1"]:checked').val();
+      if (choose === "custom-date"){
+        $('#custom-date').show();
+      } else {
+        $('#custom-date').hide();
+      }
+    }
+</script>
 <script src="custom.js"></script>
 </body>
 </html>
