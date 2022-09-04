@@ -46,6 +46,8 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
 
+    <!-- Plugins css start-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/daterange-picker.css">
     <!-- Benim yazdığım harici css dosyası -->
     <link rel="stylesheet" href="custom.css">
     <link rel="stylesheet" href="responsive.css">
@@ -258,7 +260,8 @@
                                                name="radio1"
                                                onchange="changeCharts()"
                                                value="weekly">
-                                        <label for="radio877">Weekly <span class="dateOfCharts">12.09.22 - 19.09.22</span></label>
+                                        <label for="radio877">Weekly <span
+                                                class="dateOfCharts">12.09.22 - 19.09.22</span></label>
                                     </div>
                                 </div>
                                 <div class="btn get-bill py-2 active">
@@ -268,7 +271,8 @@
                                                name="radio1"
                                                onchange="changeCharts()"
                                                value="monthly">
-                                        <label for="radio888">Monthly <span class="dateOfCharts">01.09.22 - 31.09.22</span></label>
+                                        <label for="radio888">Monthly <span
+                                                class="dateOfCharts">01.09.22 - 31.09.22</span></label>
                                     </div>
                                 </div>
                                 <div class="btn get-bill py-2 active">
@@ -286,6 +290,10 @@
                     </div>
                     <div class="col-md-4 mx-auto py-2" id="custom-date" style="display:none;">
                         <input class="form-control digits" type="text" name="daterange" value="01/15/2022 - 02/15/2022">
+                    </div>
+                    <div class="col-md-4 mx-auto py-2" id="custom-date2" style="display:none;">
+                        <input class="form-control digits" type="text" readonly name="daterange"
+                               value="01/09/2022 - 02/09/2022">
                     </div>
                 </div>
 
@@ -386,14 +394,21 @@
 <script src="../assets/js/script.js"></script>
 <!-- login js-->
 <!-- Plugin used-->
+<!-- Plugins JS start-->
+<script src="../assets/js/datepicker/daterange-picker/moment.min.js"></script>
+<script src="../assets/js/datepicker/daterange-picker/daterangepicker.js"></script>
+<script src="../assets/js/datepicker/daterange-picker/daterange-picker.custom.js"></script>
 <script>
     const changeCharts = () => {
-      let choose = $('input[name="radio1"]:checked').val();
-      if (choose === "custom-date"){
-        $('#custom-date').show();
-      } else {
-        $('#custom-date').hide();
-      }
+        let choose = $('input[name="radio1"]:checked').val();
+        if (choose === "custom-date") {
+            $('#custom-date').show();
+            $('#custom-date2').hide();
+
+        } else {
+            $('#custom-date').hide();
+            $('#custom-date2').show();
+        }
     }
 </script>
 <script src="custom.js"></script>
